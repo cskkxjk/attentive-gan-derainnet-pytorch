@@ -1,0 +1,32 @@
+# run: conda create --file environment.yml
+name: nerf
+channels:
+  - pytorch
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/r
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/pro
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/msys2
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/mro
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/free
+  - https://anaconda.mirrors.sjtug.sjtu.edu.cn/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=21.0.1
+  - cudatoolkit=11.0
+#  - pytorch=1.7.1
+#  - torchvision=0.8.2
+#  - torchaudio=0.7.2
+  - pytorch::pytorch=1.7.1
+  - pytorch::torchvision=0.8.2
+  - pytorch::torchaudio=0.7.2
+  - pip:
+      - opencv-python
+      - scipy
+      - kornia==0.5.8
+      - matplotlib
+      - tqdm
+      - tensorboard

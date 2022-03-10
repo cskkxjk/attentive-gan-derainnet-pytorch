@@ -197,18 +197,18 @@ if __name__ == '__main__':
     parser.add_argument('--exit-after', type=int, default=-1,
                         help='Checkpoint and exit after specified number of '
                              'seconds with exit code 2.')
-    # config = parser.parse_args()
-    config = parser.parse_args(''
-                               '--seed 42 '
-                               # '--debug '
-                               '--train_dir ../RainDropdataset/raindrop_data/train '
-                               '--val_dir ../RainDropdataset/raindrop_data/test_a '
-                               '--batch_size 8 '
-                               '--device 1 '
-                               '--checkpoint_every 500 '
-                               '--validate_every 500 '
-                               '--visualize_every 500 '
-                               ''.split())
+    config = parser.parse_args()
+    # config = parser.parse_args(''
+    #                            '--seed 42 '
+    #                            # '--debug '
+    #                            '--train_dir ../RainDropdataset/raindrop_data/train '
+    #                            '--val_dir ../RainDropdataset/raindrop_data/test_a '
+    #                            '--batch_size 8 '
+    #                            '--device 1 '
+    #                            '--checkpoint_every 500 '
+    #                            '--validate_every 500 '
+    #                            '--visualize_every 500 '
+    #                            ''.split())
 
     if config.debug:
         config.batch_size = 1

@@ -35,5 +35,5 @@ coming soon
 ```
 
 ## TODO
-- [] Prepare Inference Code
+- [ ] Prepare Inference Code
 
